@@ -1,0 +1,14 @@
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+# Startup
+
+# background img
+exec_always feh --bg-fill ~/Pictures/wallpapers/sky.jpg
+
+
+exec_always compton --backend glx --paint-on-overlay --vsync opengl-swc -f
+exec_always --no-startup-id numlockx on
+exec_always --no-startup-id if ! pidof greenclip; then greenclip daemon; fi;
+# exec_always --no-startup-id if ! pidof redshift; then redshift; fi;
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec --no-startup-id nm-applet
+

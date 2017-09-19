@@ -1,0 +1,14 @@
+# i3 config file by Mat-Gr
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+# Initial setting
+
+# Set Mod
+set $mod Mod4
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Turn off focus window on mouse hover
+focus_follows_mouse no
+

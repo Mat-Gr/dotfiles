@@ -1,0 +1,34 @@
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+# Launch key bindings
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# rofi rofi
+bindsym $mod+Tab exec rofi -show run -width 100 -lines 15 -bw 0 -padding 486 -opacity "85" -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd"
+bindsym $mod+q exec echo "" | rofi -dmenu -p "Google Search:" -width 100 -lines 15 -bw 0 -padding 486 -opacity "85" -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" | tr " " + | xargs -I{} xdg-open https://www.google.com/search?q={}
+bindsym $mod+d exec  rofi -show drun -modi drun -width 100 -lines 15 -bw 0 -padding 486 -opacity "85" -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd"
+bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard -width 100 -lines 15 -bw 0 -padding 486 -opacity "85" -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd"
+bindsym $mod+Ctrl+c exec "kill $(pidof greenclip daemon); xsel -bc; greenclip clear; greenclip daemon;"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Screen toggle controlls
+bindsym $mod+Shift+s exec --no-startup-id /home/mat/screens.sh
+
+# Misc. key bindings
+bindsym Print exec gnome-screenshot 
+bindsym $mod+Print exec gnome-screenshot -i 
+
