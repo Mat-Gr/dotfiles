@@ -1,1 +1,1 @@
-# My linux dorfiles - WIP
+# My linux dotfiles - WIP
