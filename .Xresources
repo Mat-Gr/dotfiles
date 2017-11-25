@@ -13,3 +13,10 @@
 *border_color:          purple
 *text_color:            dark_white
 *inactive_text_color:   grey
+
+! urxvt
+URxvt.font: xft:monospace:size=9
+URxvt.scrollBar: false
+
+URxvt.foreground: white
+URxvt.background: dark_grey
