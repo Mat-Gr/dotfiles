@@ -1,22 +1,4 @@
-! Colors
-#define dark_grey       #2f343f
-#define grey            #676E7D
-#define dark_white      #f3f4f5
-#define white           #ffffff
-#define purple          #7e57c2
-#define red             #E53935
-
-! i3
-*bg_color:              dark_grey
-*inactive_bg_color:     dark_grey
-*urgent_bg_color:       red
-*border_color:          purple
-*text_color:            dark_white
-*inactive_text_color:   grey
-
-! urxvt
-URxvt.font: xft:monospace:size=9
-URxvt.scrollBar: false
-
-URxvt.foreground: white
-URxvt.background: dark_grey
+! ~/.Xresources
+#include ".config/.xres/colors"
+#include ".config/.xres/i3"
+#include ".config/.xres/urxvt"
