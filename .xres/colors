@@ -1,4 +1,5 @@
 ! Colors
+! old colors
 #define dark_grey       #2f343f
 #define grey            #676E7D
 #define dark_white      #f3f4f5
@@ -8,38 +9,37 @@
 
 
 ! special
-*.foreground:   #839496
-*.background:   #282c34
-*.cursorColor:  #839496
+#define bg              #282c34
+#define fg              #839496
 
 ! black
-*.color0:       #353540
-*.color8:       #545466
+#define black1          #353540
+#define black2          #545466
 
 ! red
-*.color1:       #8c5760
-*.color9:       #b26f7a
+#define red1            #8c5760
+#define red2            #b26f7a
 
 ! green
-*.color2:       #7b8c58
-*.color10:      #9db270
+#define green1          #7b8c58
+#define green2          #9db270
 
 ! yellow
-*.color3:       #8c6e43
-*.color11:      #b28c55
+#define yellow1         #8c6e43
+#define yellow2         #b28c55
 
 ! blue
-*.color4:       #58698c
-*.color12:      #7086b2
+#define blue1           #58698c
+#define blue2           #7086b2
 
 ! magenta
-*.color5:       #7b5e7d
-*.color13:      #9c77b2
+#define magenta1        #7b5e7d
+#define magenta2        #9c77b2
 
 ! cyan
-*.color6:       #66808c
-*.color14:      #82a2b2
+#define cyan1           #66808c
+#define cyan2           #82a2b2
 
 ! white
-*.color7:       #8c8b8b
-*.color15:      #b8b8c8
+#define white1          #8c8b8b
+#define white2          #b8b8c8

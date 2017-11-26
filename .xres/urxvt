@@ -9,3 +9,25 @@ URxvt.internalBorder:   15
 ! Text
 URxvt.font:             xft:mononoki:size=10
 URxvt.lineSpace:        10
+
+
+! Colors
+URxvt.foreground:       fg
+URxvt.background:       bg
+URxvt.cursorColor:      fg
+URxvt.color0:           black1
+URxvt.color8:           black2
+URxvt.color1:           red1
+URxvt.color9:           red2
+URxvt.color2:           green1
+URxvt.color10:          green2
+URxvt.color3:           yellow1
+URxvt.color11:          yellow2
+URxvt.color4:           blue1
+URxvt.color12:          blue2
+URxvt.color5:           magenta1
+URxvt.color13:          magenta2
+URxvt.color6:           cyan1
+URxvt.color14:          cyan2
+URxvt.color7:           white1
+URxvt.color15:          white2
